@@ -7,7 +7,7 @@
 
 - `/api/fbvideo?url=...`
 - `/api/tiktok?url=...`
--`/api/instagram?url=...`
+- `/api/instagram?url=...`
 
 ---
 
