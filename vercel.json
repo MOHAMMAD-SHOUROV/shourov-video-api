@@ -7,6 +7,21 @@
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.js" }
+    {
+      "src": "/api/tiktok",
+      "dest": "/api/tiktok.js"
+    },
+    {
+      "src": "/api/instagram",
+      "dest": "/api/instagram.js"
+    },
+    {
+      "src": "/api/facebook",
+      "dest": "/api/facebook.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.js"
+    }
   ]
 }
