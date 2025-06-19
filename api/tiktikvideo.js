@@ -1,0 +1,16 @@
+const express = require("express");
+const router = express.Router();
+const axios = require("axios");
+
+router.get("/", async (req, res) => {
+  const url = req.query.url;
+  if (!url) return res.json({ error: "❌ Please provide a Tiktok video URL" });
+
+  try {
+    return res.json({ status: "success", download: `https://example.com/tiktok.mp4`, requested_url: url });
+  } catch (err) {
+    return res.status(500).json({ error: "Internal Server Error" });
+  }
+});
+
+module.exports = router;
